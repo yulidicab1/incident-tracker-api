@@ -38,7 +38,7 @@ incident-tracker-api/
 ├── Program.cs
 ├── incident-tracker-api.csproj
 └── README.md
-
+```
 ## Running the Project Locally
 
 Restore dependencies and run the API:
