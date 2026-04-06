@@ -10,6 +10,3 @@ public class Incident
     public DateTimeOffset CreatedAt { get; set; }
     public DateTimeOffset UpdatedAt { get; set; }
 }
-
-public enum Severity { LOW, MEDIUM, HIGH }
-public enum Status { OPEN, IN_PROGRESS, RESOLVED }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Incident Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Incident Tracker</h1>
+      <p>Simple frontend for the Incident Tracker API</p>
+    </header>
+
+    <section class="card">
+      <h2>Create Incident</h2>
+      <form id="incident-form">
+        <input type="text" id="title" placeholder="Incident title" required />
+        <textarea id="description" placeholder="Description"></textarea>
+
+        <select id="severity" required>
+          <option value="LOW">LOW</option>
+          <option value="MEDIUM">MEDIUM</option>
+          <option value="HIGH">HIGH</option>
+        </select>
+
+        <button type="submit">Create Incident</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <div class="section-header">
+        <h2>Incidents</h2>
+        <button id="refresh-btn">Refresh</button>
+      </div>
+      <div id="incident-list" class="incident-list"></div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
